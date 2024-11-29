@@ -52,6 +52,8 @@ export class AzureDevOpsWikiReader {
         `/pagesBatch?api-version=6.0-preview.1`,
         JSON.stringify(body)
       );
+      wikiPageDetails.push(...response.data.value);
+      wikiPageDetails.push(...response.data.value);
 
       wikiPageDetails.push(...response.data.value);
 
